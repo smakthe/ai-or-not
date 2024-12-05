@@ -1,0 +1,167 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1920px;
+    background: linear-gradient(135deg, #240b36, #c31432);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+}
+  
+.intro-section {
+    animation: fadeIn 0.5s ease-in-out;
+}
+  
+.intro-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+  
+.intro-description {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem 0;
+    max-width: 600px;
+    color: #ffffff;
+}
+  
+.start-btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(45deg, #1d976c, #93f9b9);
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+  
+.start-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+  
+.game-container {
+    animation: fadeIn 0.5s ease-in-out;
+    color: #ffffff;
+}
+  
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+  
+.image-btn img {
+    max-width: 300px;
+    height: auto;
+    border: 3px solid #1e90ff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+  
+.image-btn img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-over-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #240b36, #c31432);
+    border: 3px solid #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center;
+}
+  
+.game-over-modal h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+  
+.game-over-modal p {
+    font-size: 1.2rem;
+    color: #dddddd;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+  
+.game-over-modal .try-again-btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(45deg, #1d976c, #93f9b9);
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+  
+.game-over-modal .try-again-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #93f9b9, #1d976c);
+}
+  
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}  
