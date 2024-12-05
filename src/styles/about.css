@@ -1,0 +1,42 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1920px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #240b36, #c31432);
+    animation: gradientAnimation 10s ease infinite;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.about-heading {
+    font-size: 32px;
+    color: #1abc9c;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+}
+  
+.about-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+}
+  
+.about-thanks {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+}
+.about-thanks a {
+    text-decoration: none;
+    color: #175bd8;
+}
